@@ -5,3 +5,9 @@ authors = ["kawakami <kawakami.ozone@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+
+[[bin]]
+name = "winder-server"
+path = "src/server/main.rs"
+
+

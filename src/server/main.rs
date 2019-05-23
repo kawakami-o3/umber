@@ -3,8 +3,14 @@ use std::net::UdpSocket;
 use std::thread;
 use std::time;
 
+use winder::channel_udp::*;
+
 fn main() {
 
+    //channel_udp::hello();
+    hello();
+
+    /*
     let socket = UdpSocket::bind("127.0.0.1:7878").unwrap();
     socket.set_nonblocking(true).unwrap();
 
@@ -26,4 +32,5 @@ fn main() {
         }
     };
     println!("bytes: {:?}", &buf[..num_bytes_read]);
+    */
 }
