@@ -7,7 +7,7 @@ const VLEN: c_uint = 10;
 const BUFSIZE: c_uint = 200;
 const TIMEOUT: c_long = 1;
 
-unsafe fn recvmmsg_sample() {
+pub unsafe fn run() {
     let sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     if sockfd == -1 {
         panic!("socket()");

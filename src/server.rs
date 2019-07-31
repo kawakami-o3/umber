@@ -1,14 +1,18 @@
-use std::io;
-use std::net::UdpSocket;
-use std::thread;
-use std::time;
-
-use winder::channel_udp::*;
+//use std::io;
+//use std::net::UdpSocket;
+//use std::thread;
+//use std::time;
+//
+//mod channel_udp;
+mod recvmmsg;
 
 fn main() {
 
+    unsafe {
+        recvmmsg::run();
+    }
     //channel_udp::hello();
-    hello();
+    //hello();
 
     /*
     let socket = UdpSocket::bind("127.0.0.1:7878").unwrap();

@@ -5,9 +5,15 @@ authors = ["kawakami <kawakami.ozone@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+libc = "0.2"
 
 [[bin]]
-name = "winder-server"
-path = "src/server/main.rs"
+name = "server"
+path = "src/server.rs"
+
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
 
 
